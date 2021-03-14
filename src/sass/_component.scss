@@ -1,0 +1,55 @@
+/* component 
+
+Contains:
+
+Reusable components
+Buttons
+Links
+textareas
+Other reusable components
+
+*/
+
+
+/* Import variables from base */
+@import 'base';
+
+// Button
+
+//Testa byta färg på knappen via testvariabel
+
+//Ändra knappfärgar genom att justera $test variabeln
+$test:2;
+
+.btn {
+
+    @if $test< 3 {
+    border-radius: 3px;
+    background-color: $btn-background-color;
+    color: $btn-color;
+    padding: 5px;
+
+        } @else {
+            border-radius: 3px;
+            background-color: $btn-background-color-second;
+            color: $btn-color;
+            padding: 5px;
+        }
+
+}
+
+
+//Link
+
+a {
+    color: $link-color;
+}
+
+// Img sizes:
+
+img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      
+}

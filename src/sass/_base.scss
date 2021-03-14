@@ -1,0 +1,58 @@
+/* Base file
+
+Contains:
+
+Variables
+Mixins
+color codes
+Text sizes
+Text styles etc
+
+*/
+
+
+
+
+
+
+/* Variables */
+
+$font-stack: helvetica, sans-serif;
+$primary-color: #333;
+$header-color: rgb(243, 92, 92);
+
+/* Button variable*/
+
+$btn-background-color: rgb(243, 92, 92);
+$btn-background-color-second: black;
+$btn-color: white;
+
+// Link variables
+
+$link-color: rgb(43, 56, 243);
+
+
+// Header colors:
+
+h1 {
+    font-style: italic;
+}
+
+h2 {
+    color: darken($header-color, 30%)
+}
+
+h3 {
+    @extend h1;
+color: $header-color;
+}
+
+h4 {
+    color: lighten($primary-color, 10%);
+}
+
+/* Base settings */
+
+body {
+    color: $primary-color;
+}

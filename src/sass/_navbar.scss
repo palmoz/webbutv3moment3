@@ -1,0 +1,51 @@
+/*
+
+Design for navbar
+
+*/
+
+/*Mixin*/
+
+@mixin li-design {
+    float: left;
+}
+
+@mixin ul-design {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+@mixin a-design {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav {
+
+   ul {
+
+    @include ul-design;
+
+       li {
+        @include li-design;
+        
+        a {
+            @include a-design;
+        }
+        
+        }
+
+        li a:hover {
+            background-color: #111;
+          }
+        
+
+       }
+   }
+
