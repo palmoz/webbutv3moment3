@@ -9,12 +9,19 @@
   "author": "empa1600",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
     "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify-es": "^2.0.0",
     "gulp-uglifycss": "^1.1.0",
+    "node-fetch": "^2.6.1",
     "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1"
   }
 }
